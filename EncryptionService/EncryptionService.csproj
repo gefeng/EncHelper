@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EncryptionService.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="IEncryptionService.cs" />
     <Compile Include="NSNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

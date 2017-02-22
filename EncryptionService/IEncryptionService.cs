@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ServiceModel;
 using System.Runtime.Serialization;
 
-namespace EncHelper.EncryptionService
+namespace EncHelper.Service
 {
     [ServiceContract(Namespace = NSNames.NSENCHELPER1702, Name = "EncHelper")]
     public interface IEncryptionService

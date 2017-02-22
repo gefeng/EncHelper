@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionService", "EncryptionService\EncryptionService.csproj", "{EA5BBD4E-0B24-4845-B3E6-52CA0309FA4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncHelperHost", "EncHelperHost\EncHelperHost.csproj", "{39720306-365B-4C13-AD89-16CF33748757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncHelperClient", "EncHelperClient\EncHelperClient.csproj", "{3BB64805-D177-4000-B392-05734E7D2266}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EA5BBD4E-0B24-4845-B3E6-52CA0309FA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5BBD4E-0B24-4845-B3E6-52CA0309FA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5BBD4E-0B24-4845-B3E6-52CA0309FA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39720306-365B-4C13-AD89-16CF33748757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39720306-365B-4C13-AD89-16CF33748757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39720306-365B-4C13-AD89-16CF33748757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39720306-365B-4C13-AD89-16CF33748757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB64805-D177-4000-B392-05734E7D2266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB64805-D177-4000-B392-05734E7D2266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB64805-D177-4000-B392-05734E7D2266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB64805-D177-4000-B392-05734E7D2266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

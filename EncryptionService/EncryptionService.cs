@@ -1,26 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EncHelper.EncryptionService
+namespace EncHelper.Service
 {
     public class EncryptionService : IEncryptionService
     {
+        // Bitwise xor, align to right  e.g. 1010 xor 001 => 1010 xor 0001 => 1011
         public string Xor(string blockA, string blockB)
         {
-            string result = string.Empty;
+            StringBuilder sb = new StringBuilder();
 
-            if (string.IsNullOrEmpty(blockA) || string.IsNullOrEmpty(blockB))
-                return result;
+            int blockLength = (blockA.Length > blockB.Length) ? blockA.Length : blockB.Length;
 
-            foreach (char hexChar in blockA)
+            Helper.AlignToRight((blockLength-blockA.Length), ref blockA);
+            Helper.AlignToRight((blockLength-blockB.Length), ref blockB);
+
+            for (int i = 0; i < blockLength; ++i)
             {
-                int hexInt = Helper.HexCharToInt(hexChar);
+                sb.Append((Helper.HexCharToInt(blockA[i]) ^ Helper.HexCharToInt(blockB[i])).ToString("X"));
             }
 
-            return result;
+            return sb.ToString();
         }
 
         public string CalPinBlock(string pan, string pin, PinBlockFormat format)
