@@ -11,9 +11,15 @@ namespace EncHelper.Service
     [ServiceContract(Namespace = NSNames.NSENCHELPER1702, Name = "EncHelper")]
     public interface IEncryptionService
     {
+        /// <summary>
+        /// Bit wise xor calculation
+        /// </summary>
         [OperationContract]
         string Xor(string blockA, string blockB);
 
+        /// <summary>
+        /// Calculate pin block based on given format
+        /// </summary>
         [OperationContract]
         string CalPinBlock(string pan, string pin, PinBlockFormat format);
     }
