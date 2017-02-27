@@ -35,5 +35,15 @@ namespace EncHelper
 
             throw new ArgumentOutOfRangeException("hexChar");
         }
+
+        public static bool IsDigit(char inputChar)
+        {
+            if (inputChar >= '0' && inputChar <= '9')
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
